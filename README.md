@@ -7,7 +7,7 @@ docker build -t interview .
 docker run -d --rm -p 4173:4173 -p 8000:8000 --name interview interview
 ```
 
-You should be able to access [localhost](localhost:4173)
+You should be able to access http://localhost:4173
 
 # Running locally
 
