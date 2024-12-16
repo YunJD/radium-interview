@@ -28,11 +28,33 @@ When installing NVM, it will provide details to add to your `.bashrc` to initial
 
 ## Installing packages
 
-```bash
-# Python
+````bash
+# Backend
 cd backend
 pip install -r requirements.txt
+./manage.py migrate
+
+```bash
+# Frontend
+cd frontend
+pnpm i
+````
+
+## Running
+
+```bash
+# Backend
+cd backend
+./manage.py runserver
 ```
+
+```bash
+# Frontend
+cd frontend
+pnpm run dev
+```
+
+You should be able to access localhost:5173
 
 # Caveats
 
